@@ -1,0 +1,176 @@
+# Projekt-Informationen 
+site_name: KI-Drohne – Automatisierte Auslieferung
+site_description: Dokumentation zum Projekt "Automatisierte Drohnen-Auslieferung mit KI"
+site_author: Team Drone[X] # ggf. anpassen
+site_url: https://<github-username>.github.io/<repo-name>/ # anpassen!
+
+# Repository (für "Edit on GitHub" Button)
+repo_name: <github-username>/<repo-name>
+repo_url: https://github.com/<github-username>/<repo-name>
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2026 Team Drone
+
+# Theme-Konfiguration
+theme:
+  name: material
+  language: de
+  logo: assets/images/logo.png       # optional, kann erstmal weggelassen werden
+  favicon: assets/images/favicon.png # optional
+
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Zu Dark Mode wechseln
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Zu Light Mode wechseln
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs            # Hauptnavigation als Tabs oben
+    - navigation.tabs.sticky     # Tabs bleiben beim Scrollen sichtbar
+    - navigation.sections        # Sektionen in der Sidebar
+    - navigation.expand          # Sidebar standardmäßig ausgeklappt
+    - navigation.path            # Breadcrumbs
+    - navigation.indexes         # Index-Seiten für Sektionen
+    - navigation.top             # "Zurück nach oben"-Button
+    - navigation.footer          # Vor/Zurück-Navigation am Seitenende
+    - search.suggest             # Suchvorschläge
+    - search.highlight           # Treffer hervorheben
+    - search.share               # Suchergebnisse teilen
+    - toc.follow                 # Inhaltsverzeichnis folgt beim Scrollen
+    - content.code.copy          # Kopier-Button für Code-Blöcke
+    - content.code.annotate      # Annotationen in Code-Blöcken
+    - content.tabs.link          # Tabs synchronisieren
+    - content.action.edit        # "Edit on GitHub"-Link
+    - content.tooltips           # Tooltips für Abkürzungen
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+# Plugins
+plugins:
+  - search:
+      lang:
+        - de
+        - en
+  - glightbox                    # Lightbox für Bilder (Klick = Vergrößern)
+  - tags                         # Tag-System für Seiten
+
+# Markdown-Erweiterungen
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition                   # Hinweis-/Warnungs-Boxen
+  - attr_list                    # HTML-Attribute in Markdown
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true            # Anker-Links bei Überschriften
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:         # LaTeX-Mathematik
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details             # Aufklappbare Boxen
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:          # Code-Highlighting
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys                # Tasten darstellen: ++ctrl+c++
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:        # Verschachtelte Code-Blöcke + Mermaid
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:             # Tabs (z.B. für versch. Betriebssysteme)
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigationsstruktur
+nav:
+  - Startseite: index.md
+  - Hardware:
+      - hardware/index.md
+      - Drohne (Frame & FC): hardware/drohne.md
+      - Raspberry Pi Zero 2: hardware/raspberry-pi.md
+      - AI Kameramodul: hardware/ai-camera.md
+      - MTF-01P Sensor: hardware/mtf-01p.md
+      - Fernsteuerung & FPV: hardware/funk-fpv.md
+  - Software:
+      - software/index.md
+      - Flight Controller Firmware: software/flight-controller.md
+      - Raspberry Pi OS: software/raspberry-pi-os.md
+      - Ground Control Station: software/gcs.md
+      - KI-Software: software/ki-software.md
+  - Autopilot:
+      - autopilot/index.md
+      - ArduPilot Setup: autopilot/ardupilot-setup.md
+      - Position & Altitude Hold: autopilot/position-altitude-hold.md
+      - Missionsplanung: autopilot/missionsplanung.md
+  - Sensorintegration:
+      - sensoren/index.md
+      - MTF-01P Konfiguration: sensoren/mtf-01p-setup.md
+      - Optical Flow: sensoren/optical-flow.md
+      - LiDAR: sensoren/lidar.md
+  - Delivery-System:
+      - delivery-system/index.md
+      - Recherche & Konzepte: delivery-system/recherche.md
+      - Servo-Mechanismus: delivery-system/servo-mechanismus.md
+      - 3D-Druck: delivery-system/3d-druck.md
+  - Frame-Erweiterung:
+      - frame/index.md
+      - CAD-Modelle: frame/cad-modelle.md
+      - Druckanleitung: frame/druckanleitung.md
+  - Tutorials:
+      - tutorials/index.md
+      - Schnellstart: tutorials/schnellstart.md
+      - Nachbau-Anleitung: tutorials/nachbau.md
+  - Ergebnisse:
+      - ergebnisse/index.md
+      - Live-Demo: ergebnisse/demo.md
+      - Limitationen: ergebnisse/limitationen.md
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<github-username>/<repo-name>
+  generator: false  # "Made with Material for MkDocs" ausblenden (optional)
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+# extra_javascript:
+#   - assets/javascripts/mathjax.js  # Bei Bedarf für Mathematik aktivieren
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
