@@ -9,6 +9,9 @@ repo_name: ki-drohnen-ss26/project-docs
 repo_url: https://github.com/ki-drohnen-ss26/project-docs
 edit_uri: edit/main/docs/
 
+not_in_nav: |
+  history/_template.md
+
 # Copyright
 copyright: Copyright &copy; 2026 Team Drone
 

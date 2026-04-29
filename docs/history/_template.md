@@ -58,4 +58,4 @@ _Remove this section if no significant decisions were made._
 ---
 
 *Linked issues:* #NN, #NN
-*Related pages:* [Topic page](../topic/page.md)
+*Related pages:* `../topic/page.md` (replace with actual links)
