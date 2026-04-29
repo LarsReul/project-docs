@@ -1,4 +1,4 @@
-name: Deploy MkDocs zu GitHub Pages
+name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
@@ -19,27 +19,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Repository auschecken
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Python einrichten
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Abhängigkeiten installieren
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: MkDocs Site bauen
+      - name: Build MkDocs site
         run: mkdocs build --strict
 
-      - name: Pages konfigurieren
+      - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Artefakt hochladen
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
@@ -51,6 +51,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Auf GitHub Pages deployen
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

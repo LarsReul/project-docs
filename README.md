@@ -1,75 +1,77 @@
-# KI-Drohne – Automatisierte Auslieferung
+# AI Drone – Automated Delivery
 
-Dokumentation zum Projekt **"Automatisierte Drohnen-Auslieferung mit KI"**.
+Documentation for the project **"Automated drone delivery with AI"**.
 
-📖 **[Zur Online-Dokumentation](https://<github-username>.github.io/<repo-name>/)**
+📖 **[View the online documentation](https://ki-drohnen-ss26.github.io/project-docs/)**
 
-## Lokale Entwicklung
+## Local development
 
-### Voraussetzungen
+### Prerequisites
 
-- Python 3.10 oder neuer
+- Python 3.10 or newer
 - pip
 
 ### Setup
 
 ```bash
-# Repository klonen
-git clone https://github.com/<github-username>/<repo-name>.git
-cd <repo-name>
+# Clone the repository
+git clone https://github.com/ki-drohnen-ss26/project-docs.git
+cd project-docs
 
-# Virtuelles Environment anlegen (empfohlen)
+# Create a virtual environment (recommended)
 python -m venv .venv
-source .venv/bin/activate  # Linux/macOS
+source .venv/bin/activate   # Linux/macOS
 # .venv\Scripts\activate    # Windows
 
-# Abhängigkeiten installieren
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### Lokaler Entwicklungsserver
+### Local dev server
 
 ```bash
 mkdocs serve
 ```
 
-Die Doku ist dann unter <http://127.0.0.1:8000> erreichbar. Änderungen an Markdown-Dateien werden automatisch übernommen (Hot Reload).
+The documentation is then available at <http://127.0.0.1:8000>. Changes to Markdown files are picked up automatically (hot reload).
 
-### Site bauen
+### Build the site
 
 ```bash
 mkdocs build
 ```
 
-Die statische Site wird im `site/`-Verzeichnis erzeugt.
+The static site is generated in the `site/` directory.
 
 ## Deployment
 
-Bei jedem Push auf den `main`-Branch wird die Doku automatisch via GitHub Actions auf GitHub Pages veröffentlicht. Die Konfiguration findet sich in `.github/workflows/deploy.yml`.
+On every push to the `main` branch, the documentation is automatically built and published to GitHub Pages via GitHub Actions. The workflow is defined in `.github/workflows/deploy.yml`.
 
-### Einmalige Einrichtung in GitHub
+### One-time setup on GitHub
 
-1. Im Repository unter **Settings → Pages**: Source auf **GitHub Actions** stellen.
-2. Der erste Push auf `main` triggert das Deployment.
+1. In the repository under **Settings → Pages**, set the source to **GitHub Actions**.
+2. The first push to `main` will trigger the deployment.
 
-## Struktur
+## Structure
 
 ```
 .
 ├── .github/workflows/   # CI/CD (GitHub Actions)
-├── docs/                # Markdown-Quelldateien der Doku
-│   ├── assets/          # Bilder, CSS, JS
+├── docs/                # Markdown source files
+│   ├── assets/          # images, CSS, JS
 │   ├── hardware/
 │   ├── software/
 │   └── ...
-├── mkdocs.yml           # MkDocs-Konfiguration
-└── requirements.txt     # Python-Abhängigkeiten
+├── mkdocs.yml           # MkDocs configuration
+└── requirements.txt     # Python dependencies
 ```
 
-## Mitwirken
+## Contributing
 
-Inhalte werden in Markdown geschrieben. Hilfreiche Links:
+Content is written in Markdown. Useful references:
 
 - [MkDocs Material – Reference](https://squidfunk.github.io/mkdocs-material/reference/)
 - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-- [Mermaid – Diagramme](https://mermaid.js.org/)
+- [Mermaid – Diagrams](https://mermaid.js.org/)
+
+For weekly status entries, see the [Project Journal](docs/history/index.md) and the template at `docs/history/_template.md`.

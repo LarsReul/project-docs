@@ -1,64 +1,64 @@
-# Projekt-Informationen 
-site_name: KI-Drohne – Automatisierte Auslieferung
-site_description: Dokumentation zum Projekt "Automatisierte Drohnen-Auslieferung mit KI"
-site_author: Team Drone[X] # ggf. anpassen
-site_url: https://<github-username>.github.io/<repo-name>/ # anpassen!
+# Project information
+site_name: AI Drone – Automated Delivery
+site_description: Documentation for the project "Automated drone delivery with AI"
+site_author: Team Drone[X]
+site_url: https://ki-drohnen-ss26.github.io/project-docs/
 
-# Repository (für "Edit on GitHub" Button)
-repo_name: <github-username>/<repo-name>
-repo_url: https://github.com/<github-username>/<repo-name>
+# Repository (for "Edit on GitHub" button)
+repo_name: ki-drohnen-ss26/project-docs
+repo_url: https://github.com/ki-drohnen-ss26/project-docs
 edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2026 Team Drone
 
-# Theme-Konfiguration
+# Theme configuration
 theme:
   name: material
-  language: de
-  logo: assets/images/logo.png       # optional, kann erstmal weggelassen werden
+  language: en
+  logo: assets/images/logo.png       # optional
   favicon: assets/images/favicon.png # optional
 
   palette:
-    # Light Mode
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Zu Dark Mode wechseln
-    # Dark Mode
+        name: Switch to dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Zu Light Mode wechseln
+        name: Switch to light mode
 
   font:
     text: Roboto
     code: Roboto Mono
 
   features:
-    - navigation.tabs            # Hauptnavigation als Tabs oben
-    - navigation.tabs.sticky     # Tabs bleiben beim Scrollen sichtbar
-    - navigation.sections        # Sektionen in der Sidebar
-    - navigation.expand          # Sidebar standardmäßig ausgeklappt
-    - navigation.path            # Breadcrumbs
-    - navigation.indexes         # Index-Seiten für Sektionen
-    - navigation.top             # "Zurück nach oben"-Button
-    - navigation.footer          # Vor/Zurück-Navigation am Seitenende
-    - search.suggest             # Suchvorschläge
-    - search.highlight           # Treffer hervorheben
-    - search.share               # Suchergebnisse teilen
-    - toc.follow                 # Inhaltsverzeichnis folgt beim Scrollen
-    - content.code.copy          # Kopier-Button für Code-Blöcke
-    - content.code.annotate      # Annotationen in Code-Blöcken
-    - content.tabs.link          # Tabs synchronisieren
-    - content.action.edit        # "Edit on GitHub"-Link
-    - content.tooltips           # Tooltips für Abkürzungen
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
 
   icon:
     repo: fontawesome/brands/github
@@ -69,108 +69,104 @@ theme:
 plugins:
   - search:
       lang:
-        - de
         - en
-  - glightbox                    # Lightbox für Bilder (Klick = Vergrößern)
-  - tags                         # Tag-System für Seiten
+  - glightbox
+  - tags
 
-# Markdown-Erweiterungen
+# Markdown extensions
 markdown_extensions:
-  # Python Markdown
   - abbr
-  - admonition                   # Hinweis-/Warnungs-Boxen
-  - attr_list                    # HTML-Attribute in Markdown
+  - admonition
+  - attr_list
   - def_list
   - footnotes
   - md_in_html
   - tables
   - toc:
-      permalink: true            # Anker-Links bei Überschriften
+      permalink: true
 
-  # Python Markdown Extensions
-  - pymdownx.arithmatex:         # LaTeX-Mathematik
+  - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
   - pymdownx.caret
-  - pymdownx.details             # Aufklappbare Boxen
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:          # Code-Highlighting
+  - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.keys                # Tasten darstellen: ++ctrl+c++
+  - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.superfences:        # Verschachtelte Code-Blöcke + Mermaid
+  - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:             # Tabs (z.B. für versch. Betriebssysteme)
+  - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Navigationsstruktur
+# Navigation
 nav:
-  - Startseite: index.md
+  - Home: index.md
   - Hardware:
       - hardware/index.md
-      - Drohne (Frame & FC): hardware/drohne.md
+      - Drone (Frame & FC): hardware/drone.md
       - Raspberry Pi Zero 2: hardware/raspberry-pi.md
-      - AI Kameramodul: hardware/ai-camera.md
+      - AI Camera Module: hardware/ai-camera.md
       - MTF-01P Sensor: hardware/mtf-01p.md
-      - Fernsteuerung & FPV: hardware/funk-fpv.md
+      - RC & FPV: hardware/rc-fpv.md
   - Software:
       - software/index.md
       - Flight Controller Firmware: software/flight-controller.md
       - Raspberry Pi OS: software/raspberry-pi-os.md
       - Ground Control Station: software/gcs.md
-      - KI-Software: software/ki-software.md
+      - AI Software: software/ai-software.md
   - Autopilot:
       - autopilot/index.md
       - ArduPilot Setup: autopilot/ardupilot-setup.md
       - Position & Altitude Hold: autopilot/position-altitude-hold.md
-      - Missionsplanung: autopilot/missionsplanung.md
-  - Sensorintegration:
-      - sensoren/index.md
-      - MTF-01P Konfiguration: sensoren/mtf-01p-setup.md
-      - Optical Flow: sensoren/optical-flow.md
-      - LiDAR: sensoren/lidar.md
-  - Delivery-System:
+      - Mission Planning: autopilot/mission-planning.md
+  - Sensors:
+      - sensors/index.md
+      - MTF-01P Configuration: sensors/mtf-01p-configuration.md
+      - Optical Flow: sensors/optical-flow.md
+      - LiDAR: sensors/lidar.md
+  - Delivery System:
       - delivery-system/index.md
-      - Recherche & Konzepte: delivery-system/recherche.md
-      - Servo-Mechanismus: delivery-system/servo-mechanismus.md
-      - 3D-Druck: delivery-system/3d-druck.md
-  - Frame-Erweiterung:
+      - Research & Concepts: delivery-system/research.md
+      - Servo Mechanism: delivery-system/servo-mechanism.md
+      - 3D Printing: delivery-system/3d-printing.md
+  - Frame Extension:
       - frame/index.md
-      - CAD-Modelle: frame/cad-modelle.md
-      - Druckanleitung: frame/druckanleitung.md
+      - CAD Models: frame/cad-models.md
+      - Print Guide: frame/print-guide.md
   - Tutorials:
       - tutorials/index.md
-      - Schnellstart: tutorials/schnellstart.md
-      - Nachbau-Anleitung: tutorials/nachbau.md
-  - Ergebnisse:
-      - ergebnisse/index.md
-      - Live-Demo: ergebnisse/demo.md
-      - Limitationen: ergebnisse/limitationen.md
+      - Quick Start: tutorials/quickstart.md
+      - Build Guide: tutorials/build-guide.md
+  - Project Journal:
+      - history/index.md
+      - Week 1: history/week-01.md
+      - Week 2: history/week-02.md
+  - Results:
+      - results/index.md
+      - Live Demo: results/demo.md
+      - Limitations: results/limitations.md
 
 # Extras
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<github-username>/<repo-name>
-  generator: false  # "Made with Material for MkDocs" ausblenden (optional)
+      link: https://github.com/ki-drohnen-ss26/project-docs
+  generator: false
 
 extra_css:
   - assets/stylesheets/extra.css
-
-# extra_javascript:
-#   - assets/javascripts/mathjax.js  # Bei Bedarf für Mathematik aktivieren
-#   - https://polyfill.io/v3/polyfill.min.js?features=es6
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

@@ -1,65 +1,65 @@
-# KI-Drohne – Automatisierte Auslieferung
+# AI Drone – Automated Delivery
 
-Willkommen zur Dokumentation unseres Projekts zur **automatisierten Auslieferung von Objekten mittels einer FPV-Drohne mit KI-Unterstützung**.
+Welcome to the documentation of our project on **automated object delivery using an FPV drone with AI assistance**.
 
-## Über das Projekt
+## About the project
 
-Im Rahmen dieses Projekts entwickeln, implementieren und bewerten wir eine praxisnahe Drohnen-KI-Anwendung. Eine flugbereite FPV-Drohne wird dabei um folgende Fähigkeiten erweitert:
+In this project we develop, implement, and evaluate a practical drone-AI application. A flight-ready FPV drone is extended with the following capabilities:
 
-- **Autopilot-Funktion** mit ArduPilot
-- **Position Hold** und **Altitude Hold** über LiDAR und Optical Flow
-- **Delivery-Mechanismus** zum automatisierten Abwerfen von Nutzlasten
-- **KI-gestützte Objekterkennung** über das Raspberry Pi AI Kameramodul
+- **Autopilot functionality** with ArduPilot
+- **Position Hold** and **Altitude Hold** based on LiDAR and Optical Flow
+- **Delivery mechanism** for the automated release of payloads
+- **AI-assisted object detection** via the Raspberry Pi AI Camera Module
 
-!!! info "Zielgruppe"
-    Diese Dokumentation richtet sich an Studierende, Forschende und Lehrende, die KI-Drohnen-Szenarien nachbauen oder für eigene Module und Forschungsprojekte nutzen möchten.
+!!! info "Audience"
+    This documentation is aimed at students, researchers, and lecturers who want to reproduce these AI drone scenarios or use them as a basis for their own modules and research projects.
 
-## Schnelleinstieg
+## Quick start
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch: **[Schnellstart](tutorials/schnellstart.md)**
+-   :material-rocket-launch: **[Quick Start](tutorials/quickstart.md)**
 
     ---
 
-    Erste Schritte mit der Drohne – vom Auspacken bis zum ersten Flug.
+    First steps with the drone — from unpacking to the first flight.
 
--   :material-cog: **[Hardware-Übersicht](hardware/index.md)**
-
-    ---
-
-    Alle Komponenten der Drohne und ihre Eigenschaften.
-
--   :material-code-tags: **[Software-Stack](software/index.md)**
+-   :material-cog: **[Hardware Overview](hardware/index.md)**
 
     ---
 
-    Firmware, Betriebssystem und KI-Frameworks.
+    All components of the drone and their characteristics.
 
--   :material-airplane: **[Autopilot einrichten](autopilot/ardupilot-setup.md)**
+-   :material-code-tags: **[Software Stack](software/index.md)**
 
     ---
 
-    ArduPilot konfigurieren und Position/Altitude Hold aktivieren.
+    Firmware, operating system, and AI frameworks.
+
+-   :material-airplane: **[Set up the autopilot](autopilot/ardupilot-setup.md)**
+
+    ---
+
+    Configure ArduPilot and enable Position / Altitude Hold.
 
 </div>
 
-## Projektstruktur
+## Project structure
 
-Die Dokumentation folgt der Aufgabenstruktur des Projekts:
+The documentation follows the task structure defined in the project brief:
 
-| Aufgabe | Inhalt | Dokumentation |
-|---------|--------|---------------|
-| 1 | Hardware & Software kennenlernen | [Hardware](hardware/index.md), [Software](software/index.md) |
-| 2 | Erweiterung für automatische Auslieferung | Übergreifend |
-| 3 | Autopilot-Integration | [Autopilot](autopilot/index.md) |
-| 4 | Position & Altitude Hold | [Sensorintegration](sensoren/index.md) |
-| 5 | Delivery-Mechanismus | [Delivery-System](delivery-system/index.md) |
-| 6 | Frame-Erweiterung | [Frame-Erweiterung](frame/index.md) |
-| 7 | Dokumentation & Präsentation | Diese Website + Poster + Live-Demo |
+| Task | Topic | Documentation |
+|------|-------|---------------|
+| 1 | Get familiar with hardware and software | [Hardware](hardware/index.md), [Software](software/index.md) |
+| 2 | Extension for automated delivery | Cross-cutting |
+| 3 | Autopilot integration | [Autopilot](autopilot/index.md) |
+| 4 | Position & Altitude Hold | [Sensors](sensors/index.md) |
+| 5 | Delivery mechanism | [Delivery System](delivery-system/index.md) |
+| 6 | Frame extension | [Frame Extension](frame/index.md) |
+| 7 | Documentation & presentation | This site + poster + live demo |
 
 ## Team
 
-Diese Dokumentation wurde erstellt von **Team Drone[X]**.
+This documentation is maintained by **Team Drone[X]**.
 
-<!-- TODO: Teammitglieder ergänzen -->
+<!-- TODO: add team members -->

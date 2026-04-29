@@ -1,4 +1,4 @@
-# Raspberry Pi OS
+# Sensor Integration
 
 !!! note "Work in progress"
     This page is still under construction.

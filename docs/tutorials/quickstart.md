@@ -1,4 +1,4 @@
-# Raspberry Pi OS
+# Quick Start
 
 !!! note "Work in progress"
     This page is still under construction.

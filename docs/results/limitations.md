@@ -1,4 +1,4 @@
-# Raspberry Pi OS
+# Limitations
 
 !!! note "Work in progress"
     This page is still under construction.

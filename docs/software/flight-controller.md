@@ -1,6 +1,6 @@
 # Flight Controller Firmware
 
-!!! note "In Bearbeitung"
-    Diese Seite befindet sich noch in Bearbeitung.
+!!! note "Work in progress"
+    This page is still under construction.
 
-<!-- Hier kommt der Inhalt -->
+<!-- Content goes here -->
