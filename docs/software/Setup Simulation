@@ -1,4 +1,0 @@
-# Setup Simulation for a drone
-
-Here we will set up a simulation to simulate a drone that we can in turn send mavlink commands to control, 
-based on the ardupilot 
